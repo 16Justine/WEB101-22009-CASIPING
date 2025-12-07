@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Justine P. Casiping — Profile</title>
+  <meta name="description" content="Personal web profile for Justine P. Casiping">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#9aa4b2;
+      --accent:#6ee7b7;
+      --glass: rgba(255,255,255,0.04);
+      --glass-2: rgba(255,255,255,0.02);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      background: linear-gradient(180deg,#081018 0%, #071025 100%);
+      color:#e6eef6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:32px;
+    }
+    .wrap{max-width:980px;margin:0 auto;display:grid;grid-template-columns:320px 1fr;gap:28px;align-items:start}
+
+    /* sidebar */
+    .sidebar{
+      background:linear-gradient(180deg,var(--card), #06111a);
+      border-radius:14px;padding:22px;border:1px solid rgba(255,255,255,0.04);
+      box-shadow:0 6px 22px rgba(2,8,23,0.6);
+    }
+    .avatar{width:120px;height:120px;border-radius:16px;overflow:hidden;margin:0 auto;border:1px solid rgba(255,255,255,0.06);}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    h1{font-size:20px;margin:12px 0 4px;text-align:center}
+    .role{font-size:13px;color:var(--muted);text-align:center;margin-bottom:14px}
+    .stats{display:flex;justify-content:space-between;margin-top:14px}
+    .stat{background:var(--glass);padding:8px;border-radius:10px;text-align:center;flex:1;margin:0 6px}
+    .stat strong{display:block;font-size:16px}
+    .section-title{font-size:12px;color:var(--muted);text-transform:uppercase;margin:18px 0 8px}
+    .pill{display:inline-block;background:var(--glass-2);padding:6px 10px;border-radius:999px;font-size:13px;margin:6px 6px 0 0}
+    .contact a{display:block;color:var(--accent);text-decoration:none;margin:6px 0}
+
+    /* main */
+    .main{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:24px;border-radius:14px;border:1px solid rgba(255,255,255,0.03)}
+    .hero{display:flex;justify-content:space-between;align-items:center}
+    .hero-left{max-width:72%}
+    .hero h2{margin:0;font-size:22px}
+    .hero p{margin:6px 0;color:var(--muted)}
+
+    .buttons{display:flex;gap:10px;margin-top:12px}
+    .btn{padding:10px 14px;border-radius:10px;background:transparent;border:1px solid rgba(255,255,255,0.05);cursor:pointer}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),#34d399);color:#052018;border:none}
+
+    .section{margin-top:18px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .skill{background:var(--glass);padding:12px;border-radius:10px}
+
+    .project{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.02);margin-bottom:10px}
+
+    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+
+    /* responsive */
+    @media (max-width:880px){
+      .wrap{grid-template-columns:1fr;}
+      .hero{flex-direction:column;align-items:flex-start}
+      .hero-left{max-width:100%}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <aside class="sidebar">
+      <div class="avatar">
+        <!-- Replace 'your-photo.jpg' with your actual image file path -->
+        <img src="casiping.jpg" alt="Justine P. Casiping">
+      </div>
+      <h1>Justine P. Casiping</h1>
+      <div class="role">Student • Web & IT Enthusiast</div>
+
+      <div class="section-title">About</div>
+      <div style="color:var(--muted);font-size:14px;line-height:1.45">
+        Mahilig sa teknolohiya at pagbuo ng web projects. Nagtapos ng kursong may kinalaman sa information technology at kasalukuyang nag-aaral/lumalago sa programming at networking.
+      </div>
+
+      <div class="section-title">Personal Info</div>
+      <div style="color:var(--muted);font-size:14px;line-height:1.6">
+        <div style="margin-bottom:6px">🎂 <strong style="color:#e6eef6">Birthday:</strong> November 14, 2005</div>
+        <div>🎮 <strong style="color:#e6eef6">Hobbies:</strong> Basketball, Online Games</div>
+      </div>
+
+      <div class="section-title">Quick Stats</div>
+      <div class="stats">
+        <div class="stat"><strong>9</strong><small style="color:var(--muted)">Subjects</small></div>
+        <div class="stat"><strong>10</strong><small style="color:var(--muted)">Quizzes</small></div>
+        <div class="stat"><strong>100+</strong><small style="color:var(--muted)">Hours</small></div>
+      </div>
+
+      <div class="section-title">Skills</div>
+      <div>
+        <span class="pill">HTML</span>
+        <span class="pill">CSS</span>
+        <span class="pill">C++</span>
+        <span class="pill">Networking</span>
+        <span class="pill">SQL</span>
+      </div>
+
+      <div class="section-title">Contact</div>
+      <div class="contact">
+        <a href="#mailto" onclick="event.preventDefault()">📧 jcasiping@gmail.com</a>
+        <a href="#phone" onclick="event.preventDefault()">📱 +639641911579</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="hero">
+        <div class="hero-left">
+          <h2>Hello — I'm Justine. I build web profiles & school projects.</h2>
+          <p>Creating clean, responsive websites and educational tools. I enjoy learning new technologies and applying them to solve practical problems.</p>
+
+          <div class="buttons">
+            <button class="btn primary" onclick="downloadResume()">Download Resume</button>
+            <button class="btn" onclick="scrollToSection('projects')">View Projects</button>
+          </div>
+        </div>
+        <div style="text-align:right;color:var(--muted);font-size:13px">
+          <div>Location</div>
+          <div style="font-weight:600;margin-top:6px">Philippines</div>
+        </div>
+      </div>
+
+      <div class="section" id="education">
+        <div class="section-title">Education</div>
+        <div class="grid-2">
+          <div class="skill">
+            <strong>Bachelor / Course</strong>
+            <div style="color:var(--muted);font-size:13px;margin-top:6px">Bestlink College of the Philippines — 2024-2028</div>
+          </div>
+          <div class="skill">
+            <strong>Senior High</strong>
+            <div style="color:var(--muted);font-size:13px;margin-top:6px">Our Lady of Fatima University — 2022-2024</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="projects">
+        <div class="section-title">Projects</div>
+        <div class="project">
+          <strong>Student Information Management System (C++)</strong>
+          <div style="color:var(--muted);font-size:13px;margin-top:6px">A console-based C++ system that handles student records, attendance, grades, and login for teachers & students.</div>
+        </div>
+        <div class="project">
+          <strong>Personal Web Profile</strong>
+          <div style="color:var(--muted);font-size:13px;margin-top:6px">This single-file responsive profile — HTML, CSS & JavaScript. Easily customizable and printable.</div>
+        </div>
+      </div>
+
+      <div class="section" id="skills">
+        <div class="section-title">Technical Skills</div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+          <div class="pill">C++</div>
+          <div class="pill">HTML/CSS</div>
+          <div class="pill">Networking</div>
+          <div class="pill">SQL</div>
+          <div class="pill">Git</div>
+        </div>
+      </div>
+
+      <div class="section" id="contact-form">
+        <div class="section-title">Say Hi</div>
+        <form onsubmit="event.preventDefault();alert('Thanks! This is a demo contact form.')">
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <input placeholder="Your name" style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;margin-bottom:8px">
+            <input placeholder="Email" style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;margin-bottom:8px">
+          </div>
+          <textarea placeholder="Message" rows="4" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;margin-bottom:8px"></textarea>
+          <div style="text-align:right"><button class="btn primary" type="submit">Send</button></div>
+        </form>
+      </div>
+
+      <footer>Justine Casiping • All rights reserved</footer>
+    </main>
+  </div>
+
+  <script>
+    function scrollToSection(id){
+      const el=document.getElementById(id);
+      if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+    }
+
+    function downloadResume(){
+      const data = `Justine P. Casiping\nStudent & Web Enthusiast\nEmail: jcasiping@gmail.com\nPhone: +63 9641911579`;
+      const blob = new Blob([data],{type:'text/plain'});
+      const url = URL.createObjectURL(blob);
+      const a=document.createElement('a');
+      a.href=url;a.download='Justine_Casiping_Resume.txt';document.body.appendChild(a);a.click();a.remove();
+      URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>
